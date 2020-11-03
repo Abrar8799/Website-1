@@ -1,0 +1,44 @@
+:root{
+    --primary:black;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius:2px;
+    outline:none;
+    border:none;
+    cursor: pointer;
+}
+
+.btn--priamry {
+    background-color: var(--primary);
+    color:red;
+    border: 1px solid var(--primary);
+}
+
+.btn--outline{
+
+    background:linear-gradient(rgb(50deg,211,30,50)100%);
+    color:#fff;
+    padding:8px 20px;
+    border:1px solid var(--primary);
+    transition:all 0.3s easy-out;
+
+}
+
+.btn--medium{
+    padding:8px 20px;
+    font-size:20px;
+}
+
+.btn--large{
+    padding:100px 106px;
+    font-Size:20px;
+}
+
+.btn--medium:hover ,
+.btn--large:hover {
+background:#fff;
+color:#242424;
+transition:250s ;
+}
