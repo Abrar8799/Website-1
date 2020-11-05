@@ -3,8 +3,8 @@
 }
 
 .btn{
-    padding: 8px 20px;
-    border-radius:2px;
+    padding:-100px;
+    border-radius:0px;
     outline:none;
     border:none;
     cursor: pointer;
@@ -18,27 +18,32 @@
 
 .btn--outline{
 
-    background:linear-gradient(rgb(50deg,211,30,50)100%);
+    background-color: transparent;
     color:#fff;
-    padding:8px 20px;
     border:1px solid var(--primary);
     transition:all 0.3s easy-out;
 
 }
 
 .btn--medium{
-    padding:8px 20px;
+    padding:5px 15px;
     font-size:20px;
+    margin-left: 10px;
+    background-color:gainsboro;
+    color:black;
+    border:1px solid transparent;
+    border-radius:4px;
+
 }
 
 .btn--large{
-    padding:100px 106px;
+    padding:10px 10px;
     font-Size:20px;
 }
 
 .btn--medium:hover ,
 .btn--large:hover {
-background:#fff;
+background:rgb(145, 84, 84);
 color:#242424;
 transition:250s ;
 }

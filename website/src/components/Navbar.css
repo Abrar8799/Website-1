@@ -30,7 +30,7 @@
   }
   
   .fa-typo3 {
-    margin-left: 0.5rem;
+    margin-left:-140px;
     font-size: 1.8rem;
   }
   
@@ -88,7 +88,7 @@
       height: 90vh;
       position: absolute;
       top:80px;
-      left: 100%;
+      left:100%;
       opacity: 1;
       transition: all 0.5s ease;
       background-color: black;

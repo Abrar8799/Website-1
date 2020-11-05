@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import Button  from './Button'
 
-const Navbar=()=> {
+const Navbar =()=> {
 
     const [click,setclick]=useState(false);
     const [button ,setbutton]=useState(true)
@@ -42,25 +42,29 @@ return( <>
 
         <ul className={click ? 'nav-menu active':'nav-menu'}>
             <li className='nav-item'>
-                <Link to='Home/' 
+                <Link to='home/' 
                 className='nav-links'
                  onClick={closemobileMenu}>Home</Link>
             </li>
             <li className='nav-item'>
-                <Link to='/Products'
+                <Link to='/products'
                  className='nav-links'
                   onClick={closemobileMenu}>Products</Link>
             </li>
             <li className='nav-item'>
-                <Link to='/Services'
+                <Link to='/services'
                  className='nav-links' 
                  onClick={closemobileMenu}>Services</Link>
             </li>
+            
             <li className='nav-item'>
-                <Link to='/ Sign-up' className='nav-links' onClick={closemobileMenu}>Sign-up</Link>
+                <Link to='/sign-up' className='nav-links' onClick={ closemobileMenu }>
+           
+            
+            {button && <Button ButtonStyle='btn--outline'> SignUp </Button>}
+            </Link>
             </li>
             </ul>
-            {button && <Button ButtonStyle='btn--outline'> Sign-up </Button>}
         </div>
 </nav>
 </> 
